@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UserController {
     @Autowired
     private VolunteerInfoService volunteerInfoService;
-
+    
 
     @RequestMapping("/addUser")
     public String add(VolunteerInfo userInfo) {

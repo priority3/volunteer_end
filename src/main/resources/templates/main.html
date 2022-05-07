@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>志愿者管理</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+<div class="lefts">
+
+</div>
+<header class="w">
+    <div class="logo">
+        <a href="login.html">
+            <img src="../static/assets/logo.png" alt="">
+        </a>
+        <span class="page1">志愿者人员管理</span>
+        <span class="page2">志愿者活动管理</span>
+        <i class="new">有新志愿者加入，去<a href="newperson.html">添加</a></i>
+    </div>
+</header>
+<table cellspacing="0" class="w pages1">
+    <thead>
+    <tr class="hd">
+        <th>志愿者编号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+        <th>联系电话</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<table cellspacing="0" class="w pages2 none">
+    <thead>
+    <tr class="hd">
+        <th>志愿者编号</th>
+        <th>活动时间</th>
+        <th>活动事件</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody class="second">
+    </tbody>
+</table>
+</body>
+<script src="../static/js/main.js"></script>
+<script>
+    // 获取删除的节点删除数据
+    const handleDelEvent = (doc, handleFun) => {
+        [...doc].forEach((item) => {
+            item.addEventListener('click', function (e) {
+                // 做具体的删除事件
+                handleFun(this)
+            })
+        })
+    }
+    const peopleDelBtn = document.querySelectorAll('.pages1 button');
+    const actDelBtn = document.querySelectorAll('.pages2 button');
+    let flag = false
+    handleDelEvent(peopleDelBtn, (that) => {
+        if (flag) return
+        flag = true
+
+    })
+    handleDelEvent(actDelBtn, () => {
+    })
+
+</script>
+</html>

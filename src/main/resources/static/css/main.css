@@ -1,0 +1,62 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+}
+
+header .logo {
+    padding-top: 18px;
+}
+
+.logo span {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 200px;
+    height: 48px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 17px;
+    border-left: 2px solid #333;
+    margin-bottom: -3px;
+    margin-right: -5px;
+    cursor: pointer;
+}
+
+.logo img {
+    display: inline-block;
+    height: 64px;
+}
+
+.logo .new {
+    float: right;
+    font-size: 18px;
+    margin-top: 39px;
+}
+
+.new a {
+    color: #c81523;
+}
+
+table {
+    margin: 100px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid #333;
+    height: 26px;
+}
+
+thead .hd {
+    height: 40px;
+    background-color: #ccc;
+}
+
+.none {
+    display: none;
+}
